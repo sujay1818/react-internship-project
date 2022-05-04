@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eca675;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbarContainer {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbarIcon {
+  transform: scale(1.2);
+  transition: all 0.5s linear;
+}
+.navbar {
+  padding: 1rem;
+  background-color: rgba(239, 236, 236, 0.4);
+  background-image: linear-gradient(315deg, #ebdfde 74%, #fcc8a2 0%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarListItem:hover {
+  color: orangered;
+}
+
+.navbarListItem {
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+.navbarList,
+.hideNavbarList {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.brandName {
+  color: rgb(233, 109, 64);
+  border-bottom-color: rgb(255, 140, 98);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+.navbarIcon:hover {
+  color: orangered;
+}
+.navbarLogin {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 0;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: #ca7c45;
+  font-weight: 400;
+  transition: all 0.3s linear;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.navbarLogin:hover {
+  background-color: #eb7019;
+}
+.navbarSignup {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+  border: 0;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #ca7c45;
+  font-weight: 400;
+  transition: all 0.3s linear;
+  margin-left: 1rem;
+}
+.navbarSignup:hover {
+  color: orangered;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarListItemActive {
+  color: orangered;
+}
+.navbarListItemUnactive {
+  color: black;
+}
+@media (max-width: 788px) {
+  .navbarHead {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hideNavbarList {
+    transition: all 0.4s linear;
+  }
+  .navbarList {
+    height: 200px;
+  }
+  .hideNavbarList {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .navbarList {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbarLogin {
+    margin: 1rem 0.1rem;
+  }
+  .navbarSignup {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 788px) {
+  .navbarHead {
+    width: auto;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .navbarIcon {
+    display: none;
+  }
+  .navbarContainer {
+    width: 80vw;
+  }
+  .navbarListItem {
+    margin: 0rem 1rem;
+  }
+}
+
+@media (min-width: 968px) {
+  .navbarListItem {
+    margin: 0rem 2rem;
+  }
+  .navbarSignup {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1068px) {
+  .buttonContainer {
+    margin-left: 5rem;
+  }
+}

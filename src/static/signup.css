@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.signupFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  margin-top: 100px;
+}
+.signupForm {
+  margin-bottom: 3rem;
+  width: 90vw;
+  max-width: 600px;
+  height: 650px;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  padding: 1.5rem;
+}
+.name {
+  width: 8ch;
+  font-size: 1rem;
+}
+.name:hover {
+  color: orange;
+  cursor: pointer;
+}
+.signupName,
+.signupEmail,
+.signupDOB,
+.signupCity,
+.signupGender,
+.signupPassword {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.nameInput,
+.emailInput,
+.DOBInput,
+.cityInput,
+.passwordInput {
+  padding: 0.4rem 0.5rem;
+  width: 80%;
+  background-color: #e8f0fe;
+  border: 0;
+  border-radius: 0.4rem;
+  caret-color: orange;
+  font-family: "Poppins";
+}
+.nameInput:focus,
+.emailInput:focus,
+.DOBInput:focus,
+.cityInput:focus,
+.passwordInput:focus {
+  outline: none;
+}
+.signupGender label {
+  margin-right: 1rem;
+  font-size: smaller;
+}
+.signupGender input[type="radio"] {
+  margin-right: 0.4rem;
+}
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.signupSubmit {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 0;
+  color: white;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #ca7c45;
+  font-weight: 400;
+  transition: all 0.3s linear;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  margin: 1rem;
+  margin-top: 1.2rem;
+  position: relative;
+  left: 72%;
+}
+.signupSubmit:hover {
+  background-color: #eb7019;
+}
+
+.signupImg {
+  display: none;
+  width: 250px;
+  height: 650px;
+}
+.signupImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  bottom: 1.4rem;
+  position: relative;
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  z-index: 40;
+  filter: grayscale(10%) brightness(40%) sepia(90%) hue-rotate(-50deg)
+    saturate(600%) contrast(0.6);
+}
+.upperFilmSignup {
+  position: relative;
+  z-index: 80;
+  bottom: 658px;
+  width: 250px;
+  height: 600px;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.upperFilmSignup > h1 {
+  margin: 2rem;
+}
+.loginLink {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  margin-top: 1rem;
+  border: 0;
+  background-color: white;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  color: #ca7c45;
+  font-weight: 400;
+  transition: all 0.3s linear;
+}
+.name {
+  margin-right: 0.4rem;
+}
+@media (max-width: 498px) {
+  .signupSubmit {
+    position: relative;
+    left: 50%;
+    margin-top: 2rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .signupGender label {
+    margin-right: 1rem;
+    font-size: 10px;
+  }
+}
+@media (min-width: 888px) {
+  .signupImg {
+    display: block;
+  }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+.buyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.compose {
+  margin-left: 3rem;
+}
+.cardContainer {
+  width: 90vw;
+  max-width: 850px;
+  margin-bottom: 4rem;
+  height: auto;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(315deg, #fff 74%, orange 0%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.imgContainer > img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.cattleInfo {
+  padding: 1rem;
+}
+.aboutLine {
+  width: 70vw;
+  max-width: 150px;
+  height: 2px;
+  background-color: orange;
+  position: relative;
+  z-index: 2;
+  margin-left: 1rem;
+}
+.aboutSection,
+.descSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.aboutSection > h3,
+.descSection > h3 {
+  color: orangered;
+  font-size: 1.3rem;
+}
+.descLine {
+  width: 50vw;
+  max-width: 580px;
+  height: 2px;
+  background-color: orange;
+  position: relative;
+  z-index: 2;
+  margin-left: 1rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer > img {
+  padding: 1rem;
+}
+
+.imgContainer {
+  flex: 0.6;
+}
+.cattleInfo {
+  flex: 0.4;
+  margin-left: 2rem;
+}
+.cattleDesc {
+  padding: 1rem;
+}
+.emptyLine {
+  width: 90vw;
+  max-width: 700px;
+  height: 2px;
+  background-color: orange;
+  position: relative;
+  z-index: 2;
+  bottom: 40px;
+  margin-bottom: 3rem;
+}
+.buyheading {
+  width: 16ch;
+  background: white;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 1rem;
+  z-index: 5;
+  padding-left: 2rem;
+  font-weight: 400;
+  color: orange;
+}
+.cattleInfo > p {
+  font-weight: 500;
+}
+.cattleInfo > p > span {
+  font-weight: 500;
+  color: rgb(24, 72, 121);
+
+  margin-left: 0.5rem;
+}
+.cattleDesc > p {
+  font-weight: 500;
+  color: rgb(24, 72, 121);
+  font-size: 1rem;
+}
+
+@media (max-width: 668px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .imgContainer > img {
+    padding: 0rem;
+    width: 90vw;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+  .cattleDesc {
+    padding: 1rem;
+  }
+  .compose {
+    margin-left: 1rem;
+  }
+  .cattleInfo {
+    margin-left: 0rem;
+  }
+  .aboutLine {
+    min-width: 120px;
+  }
+  .cattleDesc > p {
+    font-size: 0.9rem;
+  }
+  .aboutSection > h3,
+  .descSection > h3 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 668px) {
+  .imgContainer > img {
+    border-radius: 2rem 0rem 0rem 0rem;
+  }
+  .cattleDesc > p {
+    margin: 1rem 1rem 1rem 0rem;
+  }
+}
